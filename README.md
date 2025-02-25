@@ -1,2 +1,2 @@
 # Holoearth-CustomInstaller
-Holoearth-CustomInstaller by RikkoMatsumatoOfficial
+This is My First Custom Installer for Game Holoearth... So Enjoy to use this!!!
