@@ -97,7 +97,7 @@ Source: "dotnet-sdk-8.0.406-win-x64.exe"; DestDir: "{tmp}"; Flags: dontcopy igno
 Source: "NDP48-x86-x64-AllOS-ENU.exe"; DestDir: "{tmp}"; Flags: dontcopy ignoreversion deleteafterinstall
 Source: "VisualCppRedist_AIO_x86_x64.exe"; DestDir: "{tmp}"; Flags: dontcopy ignoreversion deleteafterinstall
 Source: "dxwebsetup.exe"; DestDir: "{tmp}"; Flags: dontcopy ignoreversion deleteafterinstall
-Source: "C:\Include_DLLInnoSetup\bass.dll"; DestDir: {tmp}; Flags: dontcopy ignoreversion deleteafterinstall
+Source: "C:\Include_DLLInnoSetup\bass.dll"; DestDir: {tmp}; Flags: dontcopy dontcopy ignoreversion
 Source: "E:\COVER corp\Holoearth Launcher\{#MyAppExeName}"; DestDir: "{app}"; Flags: dontcopy ignoreversion
 Source: "E:\COVER corp\Holoearth Launcher\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
@@ -110,6 +110,6 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: de
 Filename: "{tmp}\VisualCppRedist_AIO_x86_x64.exe"; Parameters: "/aiA /gm2"; StatusMsg: "Installing Visual C++ Runtime All-in-One..."
 Filename: "{tmp}\dotnet-sdk-8.0.406-win-x64.exe"; Parameters: ""; StatusMsg: "Installing .NET SDK 8.0..."
 Filename: "{tmp}\NDP48-x86-x64-AllOS-ENU.exe"; Parameters: ""; StatusMsg: "Installing .NET Framework 4.8..."
-Filename: "{tmp}\dxwebsetup.exe"; Parameters: ""; StatusMsg: "Installing DirectX"
+Filename: "{tmp}\dxwebsetup.exe"; Parameters: ""; StatusMsg: "Installing DirectX..."
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
