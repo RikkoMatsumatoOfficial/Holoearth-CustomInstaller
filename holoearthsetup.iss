@@ -71,12 +71,12 @@ var
   mp3Name: string;
 procedure InitializeWizard();
 begin
-    ExtractTemporaryFile('TheEmineniceOfShadowMOG.mp3');
+    ExtractTemporaryFile('TheEminenceOfShadowMOG.mp3');
     ExtractTemporaryFile('dotnet-sdk-8.0.406-win-x64.exe');
     ExtractTemporaryFile('NDP48-x86-x64-AllOS-ENU.exe');
     ExtractTemporaryFile('VisualCppRedist_AIO_x86_x64.exe');
     ExtractTemporaryFile('dxwebsetup.exe');
-    mp3Name := ExpandConstant('{tmp}\TheEmineniceOfShadowMOG.mp3');
+    mp3Name := ExpandConstant('{tmp}\TheEminenceOfShadowMOG.mp3');
     BASS_Init(-1, 48000, 0, 0, 0);
     mp3Handle := BASS_StreamCreateFile(FALSE, PAnsiChar(mp3Name), 0, 0, 0, 0, BASS_SAMPLE_LOOP);
     BASS_Start();
@@ -92,7 +92,7 @@ end;
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "TheEmineniceOfShadowMOG.mp3"; DestDir: "{tmp}"; Flags: dontcopy ignoreversion deleteafterinstall
+Source: "TheEminenceOfShadowMOG.mp3"; DestDir: "{tmp}"; Flags: dontcopy ignoreversion deleteafterinstall
 Source: "dotnet-sdk-8.0.406-win-x64.exe"; DestDir: "{tmp}"; Flags: dontcopy ignoreversion deleteafterinstall
 Source: "NDP48-x86-x64-AllOS-ENU.exe"; DestDir: "{tmp}"; Flags: dontcopy ignoreversion deleteafterinstall
 Source: "VisualCppRedist_AIO_x86_x64.exe"; DestDir: "{tmp}"; Flags: dontcopy ignoreversion deleteafterinstall
